@@ -23,7 +23,7 @@ const Register = () => {
 
     const data = await response.json();
     if (data.status === "ok") {
-      navigate("/login");
+      navigate("/");
     }
   }
 
