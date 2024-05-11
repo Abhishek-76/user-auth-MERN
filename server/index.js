@@ -41,6 +41,11 @@ app.post("/api/login", async (req, res) => {
     return res.json({ status: "error", user: false });
   }
 });
+app.get("/api/users", (req, res) => {
+  User.find().then((users) => {
+    res.json(users);
+  });
+});
 
 app.listen(1336, () => {
   console.log("server Started at 1336");
