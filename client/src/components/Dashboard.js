@@ -13,7 +13,7 @@ const Dashboard = () => {
   return (
     <div className="home">
       <div>
-        <h1>Hello Admin</h1>
+        <h1>Dashboard</h1>
         <ul>
           {users.map((user) => (
             <li key={user._id}>
